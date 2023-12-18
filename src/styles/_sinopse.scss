@@ -1,0 +1,79 @@
+@use 'variables.scss';
+
+.sinopse {
+
+    &__container {
+        width: 70%;
+        display: flex;
+        gap: 120px;
+        align-items: center;
+
+        @media(max-width: 1024px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img {
+            width: 100%;
+
+            @media(max-width: 1024px) {
+                display: none;
+            }
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            p {
+                text-align: justify;
+                line-height: 1.8;
+                margin-right: 36px;
+
+                @media(max-width: 768px) {
+                    margin-right: 0;
+                }
+            }
+
+            h3 {
+                text-align: center;
+                margin-bottom: 36px;
+            }
+
+            &__icons {
+                display: flex;
+                justify-content: space-between;
+                margin: 36px 36px 36px 0;
+
+                @media(max-width: 768px) {
+                    flex-direction: column;
+                }
+
+                ul {
+                    color: variables.$text-second-color;
+
+                    @media(max-width: 768px) {
+                        font-size: 12px;
+                    }
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        margin-bottom: 36px;
+
+                        i {
+                            color: variables.$text-third-color;
+                            font-size: 24px;
+                        }
+
+                        span {
+                            color: variables.$text-primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

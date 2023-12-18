@@ -3,10 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JUSTICE LEAGUE</title>
+    <link rel="shortcut icon" href="./dist/images/justiceleague.ico" type="image/x-icon">
+    <title>Prime Video: Justice League</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/Logo-min.png" alt="logo primevideo">
+            </h1>
+            <div class="header__link">
+                <a href="#">
+                    <img src="./dist/images/login.png" alt="imagem login">
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__content">
+            <div class="hero__content__branding">
+                <img  src="./dist/images/justice-league-movie-logo.png" alt="logo do filme liga da justiça">
+            </div>
+            <p class="text--big">Batman, Mulher Maravilha e outros heróis se unem para combater o mal.</p>
+            <a href="#" class="hero__content__button"> <span>Assistir com o Prime Video</span> <br> <small>Experimente 30 dias grátis</small></a>
+            <ul class="hero__content__links">
+                <li class="hero__content__links__item">
+                    <a href="#">
+                        <img src="./dist/images/watch-trailer.png" alt="assistir ao trailer">
+                    </a>
+                </li>
+                <li class="hero__content__links__item">
+                    <a href="#">
+                        <img src="./dist/images/like.png" alt="like">
+                    </a>
+                </li>
+                <li class="hero__content__links__item">
+                    <a href="#">
+                        <img src="./dist/images/dislike.png" alt="dislike">
+                    </a>
+                </li>
+                <li class="hero__content__links__item">
+                    <a href="#">
+                        <img src="./dist/images/share.png" alt="share">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="sinopse">
+        <div class="sinopse__container container">
+            <img src="./dist/images/imagemsinopse.jpg" alt="poster liga da justiça">
+            <div class="sinopse__container__content">
+                <h3 class="title">Sinopse</h3>
+                <p class="text--big">
+                    Alimentado por sua fé restaurada na humanidade e inspirado pelo ato de altruísmo de Superman, Bruce Wayne busca a ajuda de sua nova aliada, Diana Prince, para encarar um inimigo ainda maior. Juntos, Batman e Mulher-Maravilha trabalham rapidamente para encontrar e recrutar um time de metahumanos para encarar essa ameaça recém-desperta. Mas apesar da formação dessa liga sem precedentes de heróis - Batman, Mulher-Maravilha, Aquaman, Ciborgue e Flash - talvez seja tarde demais para salvar o planeta de um ataque de proporções catastróficas. 
+                </p>
+                <div class="sinopse__container__content__icons">
+                    <ul class="text--big">
+                        <li><i class="bi bi-camera-reels"></i>Diretor: <span>Zack Snyder</span></li>
+                        <li><i class="bi bi-film"></i>Gênero: <span>Ação, Ficção Científica</span></li>
+                    </ul>
+                    <ul class="text--big">
+                        <li><i class="bi bi-clock"></i>Duração: <span>1h55min </span></li>
+                        <li><i class="bi bi-file-person"></i>Classificação: <span>12 anos</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="characters">
+        <h2 class="title">Personagens</h2>
+        <nav class="characters__tabs">
+            <button data-tab-button="mulher-maravilha" class="characters__tabs__button characters__tabs__button--is-active">Mulher Maravilha</button>
+            <button data-tab-button="batman" class="characters__tabs__button" >Batman</button>
+            <button data-tab-button="cyborgue" class="characters__tabs__button">Cyborgue</button>
+            <button data-tab-button="flash" class="characters__tabs__button">Flash</bnutton>
+            <button data-tab-button="superman" class="characters__tabs__button">Superman</button>
+            <button data-tab-button="aquaman" class="characters__tabs__button">Aquaman</button>
+        </nav>
+        <article data-tab-id="mulher-maravilha" class="characters__list characters__list--is-active">
+            <div class="characters__list__image">
+                <img src="./dist/images/character/mulher_maravilha.jpg" alt="mulher-maravilha">
+            </div>
+            <div class="characters__list__text">
+                <h3 class="title">Mulher Maravilha (Gal Gadot)</h3>
+                <p class="text--big">
+                    Mulher-maravilha é uma guerreira destemida, com uma mistura única de graça e poder. Ao longo do filme, testemunhamos sua liderança e habilidade excepcionais, seja na batalha contra ameaças formidáveis ou ao motivar a Liga da Justiça a unir forças. Sua presença é um farol de esperança, representando não apenas uma guerreira formidável, mas também uma defensora incansável da justiça. Além de suas proezas físicas, a Mulher-Maravilha é retratada como uma personagem complexa, com uma conexão profunda com a humanidade, sua empatia e compreensão dos desafios enfrentados pelas pessoas comuns a tornam uma heroína envolvente e inspiradora. O filme destaca não apenas as habilidades sobre-humanas da Mulher-Maravilha, mas também sua capacidade de inspirar mudanças e unir uma equipe diversificada para enfrentar ameaças globais. Ela se destaca como simbolo de coragem e perseverança.
+                </p>
+            </div>
+        </article>
+        <article data-tab-id="batman"class="characters__list">
+            <div class="characters__list__image">
+                <img src="./dist/images/character/batman.jpg" alt="batman">
+            </div>
+            <div class="characters__list__text">
+                <h3 class="title">Batman (Ben Affleck)</h3>
+                <p class="text--big">
+                    Batman é o estrategista da Liga da Justiça, utilizando sua mente afiada e tecnologia avançada para enfrentar ameaças cósmicas. Sua abordagem mais sombria e pragmática é equilibrada pelos laços que ele forma com os membros da equipe. Apesar de sua natureza solitária, Batman percebe a importância da colaboração para derrotar os inimigos formidáveis. Ao longo do filme, somos lembrados não apenas de suas habilidades de combate excepcionais, mas também de sua humanidade. Batman é vunerável, enfrentando o peso de suas escolhas passadas e buscando redenção. O filme destaca equilibrio delicado entre o herói e o homem por trás da máscara. Batman não é apenas um vigilante mascarado, mas um símbolo de perseverança, superação e a crença de que mesmo em um mundo de superpoderes, a humanidade pode prevalecer.
+                </p>
+            </div>
+        </article>
+        <article data-tab-id="cyborgue" class="characters__list">
+            <div class="characters__list__image">
+                <img src="./dist/images/character/cyborg.jpg" alt="cyborgue">
+            </div>
+            <div class="characters__list__text">
+                <h3 class="title">Cyborgue (Ray Fisher)</h3>
+                <p class="text--big">
+                    Cyborgue é um herói que se debate com suas próprias transformações. A fusão de sua mente com a tecnologia não apenas o torna uma força formidável, mas também ressalta os desafios pessoais que ele enfrenta. Além de suas habilidades técnicas, Cyborg desempenha um papel crucial na equipe, contribuindo não apenas com sua força, mas também com sua inteligência. Sua capacidade de se conectar e interagir com sistemas digitais prova ser inestimável em situações críticas. Cyborg representa a síntese entre homem e máquina, evidenciando que a força verdadeira reside na aceitação de quem somos, mesmo diante de diversidades. O filme destaca com sua presença a diversidade e a complementaridade dos membros, mostrando que cada habilidade, seja humana ou tecnólogica, é valiosa na busca pela justiça.    
+                </p>
+            </div>
+        </article>
+        <article data-tab-id="flash" class="characters__list">
+            <div class="characters__list__image">
+                <img src="./dist/images/character/flash.jpg" alt="flash">
+            </div>
+            <div class="characters__list__text">
+                <h3 class="title">Flash (Ezra Miller)</h3>
+                <p class="text--big">
+                        Flash é uma mistura refrescante de juventude, entusiasmo e uma abordagem descontraída. Seu domínio da velocidade não apenas adiciona uma dimensão única à cenas de ação, mas também destaca sua importância estratégica na equipe, sendo capaz de agir rapidamente em situações críticas. Barry Allen é apresentado como alguém que está começando a entender a extensão de seus poderes e a responsabilidade que vem com eles. Além de sua destreza sobrenatural, Flash cntribui para o espírito de camaradagem da Liga da Justiça. Sua interação com os outros membros, especialmente Batman e Aquaman, adiciona um elemento de leveza ao grupo. O filme destaca que o Flash é mais d que um herói veloz; ele personifica a juventude e a novidade, mostrando que até mesmoos mais recentes membros podem desempenhar um papel vital na defesa da justiça e na preservação do equilibrio do universo. 
+                </p>
+            </div>
+        </article>
+        <article data-tab-id="superman" class="characters__list">
+            <div class="characters__list__image">
+                <img src="./dist/images/character/superman.jpg" alt="superman">
+            </div>
+            <div class="characters__list__text">
+                <h3 class="title">Superman (Henry Cavill)</h3>
+                <p class="text--big">
+                    Superman é conhecido como o último filho de Krypton, personifica virtudes clássicas de heroímo: coragem, altruísmo e esperança. Sua presença é um farol de otimismo, e seus poderes sobrenaturais se unem aos esforços da Liga da Justiça para enfrentar inimigos de escala global. Ao longo do filme o Superman não apenas mostra sua frça física, mas também a exploração de seu lado humano. Sua jornada de autodescoberta e reconciliação com sua identidade, tanto cmo Clark Kent quanto como Superman, adiciona camadas significativas à narrativa. Superman não é apenas um ícone de força, mas um símbolo de inspiração, demonstrando que até mesmo os mais poderosos podem se guiados por valores nobres e um desejo genuíno de proteger os inocentes. A reintrodução de Superman na Liga da Justiça não apenas eleva o nível da batalha, mas também enfaiza a importância da esperança e da união, elementos fundamentais no universo de super-heróis da DC. 
+                </p>
+            </div>
+        </article>
+        <article data-tab-id="aquaman" class="characters__list">
+            <div class="characters__list__image">
+                <img src="./dist/images/character/aquaman.jpg" alt="aquaman">
+            </div>
+            <div class="characters__list__text">
+                <h3 class="title">Aquaman (Jason Momoa)</h3>
+                <p class="text--big">
+                    Aquaman, interpretado por Jason Momoa, é apresentado como um herói relutante, inicialmente distante das questões do mundo da superfície. Sua habilidade de controlar a água e se comunicar com criaturas marinhas desempenha um papel crucial na trama, especialmente durante a batalha contra Steppenwolf. A caracterização de Aquaman como um forasteiro resistente, combinada com sua força formidável, trouxe uma abordagem única ao personagem, preparando o terreno para o desenvolvimento posterior em seu filme solo.
+                </p>
+            </div>
+        </article>
+        </section>
+        <section class="trailer">
+            <div class="trailer__container container" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                <h2 class="title">Assista ao trailer do filme</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BZUm2lpPoKM?si=P70cQ6j6AJDGwX12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__container">
+                <img class="footer__logo" src="./dist/images/logoprimevideo.png" alt="logo primevideo">
+                <ul class="footer__links">
+                    <li class="footer__links__item">
+                        <a href="#" class="text">Termos e aviso de privacidade</a>
+                    </li>
+                    <li class="footer__links__item">
+                        <a href="#" class="text">Enviar feedback</a>
+                    </li>
+                    <li class="footer__links__item">
+                        <a href="#" class="text">Ajuda</a>
+                    </li>
+                    <li class="footer__links__item">
+                        <a href="#" class="text">Aviso sobre cookies</a>
+                    </li>
+                    <li class="footer__links__item text">
+                        &copy; 1996-2023, Amazon.com, Inc. ou suas afiliadas
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script src="./src/main.js"></script>
 </body>
 </html>

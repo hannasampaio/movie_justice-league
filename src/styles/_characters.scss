@@ -1,0 +1,93 @@
+@use 'variables.scss';
+
+.characters {
+    text-align: center;
+    padding: 40px;
+
+    @media(max-width: 1024px) {
+        width: 98%;
+        padding-top: 0;
+    }
+    
+    &__tabs {
+        display: inline-block;
+        justify-content: center;
+
+        &__button {
+            color: variables.$text-second-color;
+            font-size: 20px;
+            border: none;
+            border-bottom: 5px solid transparent;
+            padding-bottom: 8px;
+            background: none;
+            text-transform: uppercase;
+            margin: 32px 16px;
+            cursor: pointer;
+
+            &--is-active {
+                border-color: variables.$text-second-color;
+            }
+
+            @media(max-width: 1024px) {
+                font-size: 16px;
+            }
+
+        }
+    }
+
+    &__list {
+        width: 80%;
+        display: none;
+        margin: 24px auto;
+        gap: 56px;
+
+        @media(max-width: 1024px) {
+            flex-direction: column;
+        }
+
+        &--is-active {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__text {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 46px;
+            margin: 0 auto;
+            @media(max-width: 1024px) {
+                width: 110%;
+            }
+
+            p {
+                text-align: justify;
+                line-height: 1.5;
+
+                @media(max-width: 1024px) {
+                    font-size: 14px;
+                }
+            }
+
+            h2 {
+                text-align: center;
+            }
+        }
+
+        &__image {
+            width: 50%;
+
+            @media(max-width: 1024px) {
+                width: 100%;
+            }
+
+            img {
+                border-radius: 8px;
+
+                @media(max-width: 1024px) {
+                    height: 250px;
+                }
+            }
+        }
+    }      
+}

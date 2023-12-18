@@ -1,0 +1,44 @@
+@use 'variables.scss';
+
+.footer {
+    padding-top: 24px;
+
+    &__container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 16px;
+
+        @media(max-width: 768px) {
+            width: 90%;
+        }
+    }
+
+    &__logo {
+        width: 10%;
+        margin: 16px 16px;
+    }
+
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 16px;
+
+        &__item {
+            display: inline-block;
+
+            a {
+                text-decoration: none;
+                padding: 8px 16px;
+                display: block;
+
+                &:hover {
+                    color: variables.$text-second-color;
+                }
+            }
+        }
+    }
+}
