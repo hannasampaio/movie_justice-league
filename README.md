@@ -1,4 +1,6 @@
-# 🦇 Justice League — página de filme (projeto de estudo)
+<p align="center"><img src="src/images/justice-league-movie-logo.png" width="420" alt="Justice League"></p>
+
+# Justice League — página de filme (projeto de estudo)
 
 Página de apresentação do filme *Liga da Justiça* inspirada no layout do Prime Video, feita para praticar **SASS (com mixins), Gulp e JavaScript**: banner principal, sinopse com ficha técnica, separadores com as personagens, trailer incorporado e rodapé, com layout responsivo.
 
